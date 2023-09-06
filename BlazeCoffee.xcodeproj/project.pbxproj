@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42158A432AA8C62D00120617 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 42158A422AA8C62D00120617 /* loading.json */; };
+		424F47962AA77ACA003D9BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47952AA77ACA003D9BA5 /* AppDelegate.swift */; };
+		424F479D2AA77ACA003D9BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 424F479B2AA77ACA003D9BA5 /* Main.storyboard */; };
+		424F479F2AA77ACC003D9BA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 424F479E2AA77ACC003D9BA5 /* Assets.xcassets */; };
+		424F47AB2AA77DEF003D9BA5 /* StartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47AA2AA77DEF003D9BA5 /* StartApp.swift */; };
+		424F47D12AA77FDC003D9BA5 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47D02AA77FDC003D9BA5 /* MainTabBarView.swift */; };
+		424F47D32AA77FE9003D9BA5 /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47D22AA77FE9003D9BA5 /* TabBarModel.swift */; };
+		424F47D52AA77FEE003D9BA5 /* Tabitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47D42AA77FEE003D9BA5 /* Tabitem.swift */; };
+		424F47D72AA77FF6003D9BA5 /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47D62AA77FF6003D9BA5 /* TabPosition.swift */; };
+		424F47D92AA77FFB003D9BA5 /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47D82AA77FFB003D9BA5 /* TabShape.swift */; };
+		424F47DD2AA78029003D9BA5 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47DC2AA78029003D9BA5 /* AuthView.swift */; };
+		424F47DF2AA7802F003D9BA5 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47DE2AA7802F003D9BA5 /* UserViewModel.swift */; };
+		424F47E12AA78034003D9BA5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47E02AA78034003D9BA5 /* UserModel.swift */; };
+		424F47E42AA7804C003D9BA5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47E32AA7804C003D9BA5 /* HomeView.swift */; };
+		424F47E62AA78053003D9BA5 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47E52AA78053003D9BA5 /* NewsViewModel.swift */; };
+		424F47E82AA78059003D9BA5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47E72AA78059003D9BA5 /* ProfileView.swift */; };
+		424F47EA2AA7805E003D9BA5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47E92AA7805E003D9BA5 /* SettingsView.swift */; };
+		424F47EF2AA78084003D9BA5 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47EE2AA78084003D9BA5 /* LocationModel.swift */; };
+		424F47F12AA7808D003D9BA5 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47F02AA7808D003D9BA5 /* LocationViewModel.swift */; };
+		424F47F32AA78096003D9BA5 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47F22AA78096003D9BA5 /* LocationListView.swift */; };
+		424F47F52AA780A7003D9BA5 /* LocationPriviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47F42AA780A7003D9BA5 /* LocationPriviewView.swift */; };
+		424F47F72AA780B5003D9BA5 /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47F62AA780B5003D9BA5 /* LocationMapAnnotationView.swift */; };
+		424F47F92AA780C0003D9BA5 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47F82AA780C0003D9BA5 /* LocationDetailView.swift */; };
+		424F47FB2AA780C6003D9BA5 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F47FA2AA780C6003D9BA5 /* LocationsView.swift */; };
+		424F47FE2AA7818A003D9BA5 /* Sunnyspells-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 424F47FC2AA7818A003D9BA5 /* Sunnyspells-Regular.otf */; };
+		424F47FF2AA7818A003D9BA5 /* MarckScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 424F47FD2AA7818A003D9BA5 /* MarckScript-Regular.ttf */; };
+		424F48012AA785AB003D9BA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 424F48002AA785AB003D9BA5 /* GoogleService-Info.plist */; };
+		E57752B83B8E5B570ED3E35A /* Pods_BlazeCoffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302BB6BAB117E00764729939 /* Pods_BlazeCoffee.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04BA082EA07C4FC98A19E1BC /* Pods-BlazeCoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlazeCoffee.release.xcconfig"; path = "Target Support Files/Pods-BlazeCoffee/Pods-BlazeCoffee.release.xcconfig"; sourceTree = "<group>"; };
+		302BB6BAB117E00764729939 /* Pods_BlazeCoffee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlazeCoffee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42158A422AA8C62D00120617 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		424F47922AA77ACA003D9BA5 /* BlazeCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlazeCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		424F47952AA77ACA003D9BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		424F479C2AA77ACA003D9BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		424F479E2AA77ACC003D9BA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		424F47A32AA77ACC003D9BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		424F47A92AA77DC0003D9BA5 /* BlazeCoffee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlazeCoffee.entitlements; sourceTree = "<group>"; };
+		424F47AA2AA77DEF003D9BA5 /* StartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartApp.swift; sourceTree = "<group>"; };
+		424F47D02AA77FDC003D9BA5 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		424F47D22AA77FE9003D9BA5 /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
+		424F47D42AA77FEE003D9BA5 /* Tabitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabitem.swift; sourceTree = "<group>"; };
+		424F47D62AA77FF6003D9BA5 /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
+		424F47D82AA77FFB003D9BA5 /* TabShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
+		424F47DC2AA78029003D9BA5 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		424F47DE2AA7802F003D9BA5 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		424F47E02AA78034003D9BA5 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		424F47E32AA7804C003D9BA5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		424F47E52AA78053003D9BA5 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		424F47E72AA78059003D9BA5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		424F47E92AA7805E003D9BA5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		424F47EE2AA78084003D9BA5 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		424F47F02AA7808D003D9BA5 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		424F47F22AA78096003D9BA5 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		424F47F42AA780A7003D9BA5 /* LocationPriviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPriviewView.swift; sourceTree = "<group>"; };
+		424F47F62AA780B5003D9BA5 /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
+		424F47F82AA780C0003D9BA5 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		424F47FA2AA780C6003D9BA5 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		424F47FC2AA7818A003D9BA5 /* Sunnyspells-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sunnyspells-Regular.otf"; sourceTree = "<group>"; };
+		424F47FD2AA7818A003D9BA5 /* MarckScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarckScript-Regular.ttf"; sourceTree = "<group>"; };
+		424F48002AA785AB003D9BA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CB8BC4B4578CD789E30734EF /* Pods-BlazeCoffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlazeCoffee.debug.xcconfig"; path = "Target Support Files/Pods-BlazeCoffee/Pods-BlazeCoffee.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		424F478F2AA77ACA003D9BA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57752B83B8E5B570ED3E35A /* Pods_BlazeCoffee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14BC3BA87016E429CFF4C66A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB8BC4B4578CD789E30734EF /* Pods-BlazeCoffee.debug.xcconfig */,
+				04BA082EA07C4FC98A19E1BC /* Pods-BlazeCoffee.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		424F47892AA77ACA003D9BA5 = {
+			isa = PBXGroup;
+			children = (
+				424F47942AA77ACA003D9BA5 /* BlazeCoffee */,
+				424F47932AA77ACA003D9BA5 /* Products */,
+				14BC3BA87016E429CFF4C66A /* Pods */,
+				50C81AA119E416225E3249E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		424F47932AA77ACA003D9BA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				424F47922AA77ACA003D9BA5 /* BlazeCoffee.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		424F47942AA77ACA003D9BA5 /* BlazeCoffee */ = {
+			isa = PBXGroup;
+			children = (
+				424F47A92AA77DC0003D9BA5 /* BlazeCoffee.entitlements */,
+				424F47FD2AA7818A003D9BA5 /* MarckScript-Regular.ttf */,
+				424F48002AA785AB003D9BA5 /* GoogleService-Info.plist */,
+				424F47FC2AA7818A003D9BA5 /* Sunnyspells-Regular.otf */,
+				42158A422AA8C62D00120617 /* loading.json */,
+				424F47952AA77ACA003D9BA5 /* AppDelegate.swift */,
+				424F47AA2AA77DEF003D9BA5 /* StartApp.swift */,
+				424F47AC2AA77E00003D9BA5 /* Main */,
+				424F479B2AA77ACA003D9BA5 /* Main.storyboard */,
+				424F479E2AA77ACC003D9BA5 /* Assets.xcassets */,
+				424F47A32AA77ACC003D9BA5 /* Info.plist */,
+			);
+			path = BlazeCoffee;
+			sourceTree = "<group>";
+		};
+		424F47AC2AA77E00003D9BA5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				424F47DB2AA78018003D9BA5 /* MainTabBar */,
+				424F47E22AA78038003D9BA5 /* Auth */,
+				424F47EC2AA7806F003D9BA5 /* Home */,
+				424F47EB2AA78068003D9BA5 /* Profile */,
+				424F47ED2AA78079003D9BA5 /* MapCafe */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		424F47DA2AA78004003D9BA5 /* TabBarComponents */ = {
+			isa = PBXGroup;
+			children = (
+				424F47D22AA77FE9003D9BA5 /* TabBarModel.swift */,
+				424F47D42AA77FEE003D9BA5 /* Tabitem.swift */,
+				424F47D62AA77FF6003D9BA5 /* TabPosition.swift */,
+				424F47D82AA77FFB003D9BA5 /* TabShape.swift */,
+			);
+			path = TabBarComponents;
+			sourceTree = "<group>";
+		};
+		424F47DB2AA78018003D9BA5 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				424F47D02AA77FDC003D9BA5 /* MainTabBarView.swift */,
+				424F47DA2AA78004003D9BA5 /* TabBarComponents */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		424F47E22AA78038003D9BA5 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				424F47DC2AA78029003D9BA5 /* AuthView.swift */,
+				424F47DE2AA7802F003D9BA5 /* UserViewModel.swift */,
+				424F47E02AA78034003D9BA5 /* UserModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		424F47EB2AA78068003D9BA5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				424F47E72AA78059003D9BA5 /* ProfileView.swift */,
+				424F47E92AA7805E003D9BA5 /* SettingsView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		424F47EC2AA7806F003D9BA5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				424F47E32AA7804C003D9BA5 /* HomeView.swift */,
+				424F47E52AA78053003D9BA5 /* NewsViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		424F47ED2AA78079003D9BA5 /* MapCafe */ = {
+			isa = PBXGroup;
+			children = (
+				424F47EE2AA78084003D9BA5 /* LocationModel.swift */,
+				424F47F02AA7808D003D9BA5 /* LocationViewModel.swift */,
+				424F47F22AA78096003D9BA5 /* LocationListView.swift */,
+				424F47F42AA780A7003D9BA5 /* LocationPriviewView.swift */,
+				424F47F62AA780B5003D9BA5 /* LocationMapAnnotationView.swift */,
+				424F47F82AA780C0003D9BA5 /* LocationDetailView.swift */,
+				424F47FA2AA780C6003D9BA5 /* LocationsView.swift */,
+			);
+			path = MapCafe;
+			sourceTree = "<group>";
+		};
+		50C81AA119E416225E3249E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				302BB6BAB117E00764729939 /* Pods_BlazeCoffee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		424F47912AA77ACA003D9BA5 /* BlazeCoffee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 424F47A62AA77ACC003D9BA5 /* Build configuration list for PBXNativeTarget "BlazeCoffee" */;
+			buildPhases = (
+				C3683732F4262F27D6057AB0 /* [CP] Check Pods Manifest.lock */,
+				424F478E2AA77ACA003D9BA5 /* Sources */,
+				424F478F2AA77ACA003D9BA5 /* Frameworks */,
+				424F47902AA77ACA003D9BA5 /* Resources */,
+				BBDD27FC2CF49772FFE8BF36 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlazeCoffee;
+			productName = BlazeCoffee;
+			productReference = 424F47922AA77ACA003D9BA5 /* BlazeCoffee.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		424F478A2AA77ACA003D9BA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					424F47912AA77ACA003D9BA5 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 424F478D2AA77ACA003D9BA5 /* Build configuration list for PBXProject "BlazeCoffee" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 424F47892AA77ACA003D9BA5;
+			productRefGroup = 424F47932AA77ACA003D9BA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				424F47912AA77ACA003D9BA5 /* BlazeCoffee */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		424F47902AA77ACA003D9BA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424F479F2AA77ACC003D9BA5 /* Assets.xcassets in Resources */,
+				424F47FF2AA7818A003D9BA5 /* MarckScript-Regular.ttf in Resources */,
+				42158A432AA8C62D00120617 /* loading.json in Resources */,
+				424F48012AA785AB003D9BA5 /* GoogleService-Info.plist in Resources */,
+				424F47FE2AA7818A003D9BA5 /* Sunnyspells-Regular.otf in Resources */,
+				424F479D2AA77ACA003D9BA5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BBDD27FC2CF49772FFE8BF36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlazeCoffee/Pods-BlazeCoffee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlazeCoffee/Pods-BlazeCoffee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlazeCoffee/Pods-BlazeCoffee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3683732F4262F27D6057AB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlazeCoffee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		424F478E2AA77ACA003D9BA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424F47AB2AA77DEF003D9BA5 /* StartApp.swift in Sources */,
+				424F47E82AA78059003D9BA5 /* ProfileView.swift in Sources */,
+				424F47D32AA77FE9003D9BA5 /* TabBarModel.swift in Sources */,
+				424F47D72AA77FF6003D9BA5 /* TabPosition.swift in Sources */,
+				424F47F52AA780A7003D9BA5 /* LocationPriviewView.swift in Sources */,
+				424F47D12AA77FDC003D9BA5 /* MainTabBarView.swift in Sources */,
+				424F47FB2AA780C6003D9BA5 /* LocationsView.swift in Sources */,
+				424F47962AA77ACA003D9BA5 /* AppDelegate.swift in Sources */,
+				424F47E42AA7804C003D9BA5 /* HomeView.swift in Sources */,
+				424F47F12AA7808D003D9BA5 /* LocationViewModel.swift in Sources */,
+				424F47EA2AA7805E003D9BA5 /* SettingsView.swift in Sources */,
+				424F47D52AA77FEE003D9BA5 /* Tabitem.swift in Sources */,
+				424F47E62AA78053003D9BA5 /* NewsViewModel.swift in Sources */,
+				424F47DD2AA78029003D9BA5 /* AuthView.swift in Sources */,
+				424F47DF2AA7802F003D9BA5 /* UserViewModel.swift in Sources */,
+				424F47F32AA78096003D9BA5 /* LocationListView.swift in Sources */,
+				424F47E12AA78034003D9BA5 /* UserModel.swift in Sources */,
+				424F47EF2AA78084003D9BA5 /* LocationModel.swift in Sources */,
+				424F47F72AA780B5003D9BA5 /* LocationMapAnnotationView.swift in Sources */,
+				424F47F92AA780C0003D9BA5 /* LocationDetailView.swift in Sources */,
+				424F47D92AA77FFB003D9BA5 /* TabShape.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		424F479B2AA77ACA003D9BA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				424F479C2AA77ACA003D9BA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		424F47A42AA77ACC003D9BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		424F47A52AA77ACC003D9BA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		424F47A72AA77ACC003D9BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8BC4B4578CD789E30734EF /* Pods-BlazeCoffee.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BlazeCoffee/BlazeCoffee.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9J6P4577NF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlazeCoffee/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Blaze Coffee";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BlazeCoffee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = BlazeCoffeProvi;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		424F47A82AA77ACC003D9BA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04BA082EA07C4FC98A19E1BC /* Pods-BlazeCoffee.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BlazeCoffee/BlazeCoffee.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9J6P4577NF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlazeCoffee/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Blaze Coffee";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BlazeCoffee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = BlazeCoffeProvi;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		424F478D2AA77ACA003D9BA5 /* Build configuration list for PBXProject "BlazeCoffee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424F47A42AA77ACC003D9BA5 /* Debug */,
+				424F47A52AA77ACC003D9BA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		424F47A62AA77ACC003D9BA5 /* Build configuration list for PBXNativeTarget "BlazeCoffee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424F47A72AA77ACC003D9BA5 /* Debug */,
+				424F47A82AA77ACC003D9BA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 424F478A2AA77ACA003D9BA5 /* Project object */;
+}
