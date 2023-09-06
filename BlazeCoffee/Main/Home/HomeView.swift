@@ -5,7 +5,7 @@ struct HomeView: View {
     @State var selectedTab: String = "1"
     var body: some View {
         VStack(spacing: 25){
-            Text(" - News & Promotion - ")
+            Text(" - News & Promotions - ")
                 .font(.custom("MarckScript-Regular", size: 35))
                 .foregroundColor(.black)
                 .background{

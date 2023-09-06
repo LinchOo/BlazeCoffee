@@ -6,7 +6,7 @@ struct MainTabBarView: View {
     @StateObject private var locationViewModel = LocationsViewModel()
     @StateObject var viewModelUser = userViewModel()
     // Custom TabBar
-    @State private var activeTab: TabBarModel = .cafe
+    @State private var activeTab: TabBarModel = .home
     @State private var tabShapePosition: CGPoint = .zero
     @Namespace private var animation
     init(){
