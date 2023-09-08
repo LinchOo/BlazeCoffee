@@ -637,6 +637,12 @@ PODS:
   - DSF_QRCode (16.0.1):
     - SwiftImageReadWrite (~> 1.1.6)
     - SwiftQRCodeGenerator
+  - FBAEMKit (16.1.3):
+    - FBSDKCoreKit_Basics (= 16.1.3)
+  - FBSDKCoreKit (16.1.3):
+    - FBAEMKit (= 16.1.3)
+    - FBSDKCoreKit_Basics (= 16.1.3)
+  - FBSDKCoreKit_Basics (16.1.3)
   - FirebaseAnalytics (10.12.0):
     - FirebaseAnalytics/AdIdSupport (= 10.12.0)
     - FirebaseCore (~> 10.0)
@@ -800,6 +806,7 @@ PODS:
 
 DEPENDENCIES:
   - DSF_QRCode (~> 16.0.1)
+  - FBSDKCoreKit
   - FirebaseAnalytics
   - FirebaseAuth
   - FirebaseFirestore
@@ -810,6 +817,9 @@ SPEC REPOS:
     - abseil
     - BoringSSL-GRPC
     - DSF_QRCode
+    - FBAEMKit
+    - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
     - FirebaseAnalytics
     - FirebaseAppCheckInterop
     - FirebaseAuth
@@ -833,6 +843,9 @@ SPEC CHECKSUMS:
   abseil: 926fb7a82dc6d2b8e1f2ed7f3a718bce691d1e46
   BoringSSL-GRPC: 3175b25143e648463a56daeaaa499c6cb86dad33
   DSF_QRCode: 375bde7c83ad4f480d54d07d8c51f8bbce6b438d
+  FBAEMKit: af2972f39bb0f3f7c45998f435b007833c32ffb2
+  FBSDKCoreKit: 19e2e18b3be578d7a51fed8fdd8c152bef0b9511
+  FBSDKCoreKit_Basics: dd9826ce3c9fd9f8cdf8dbbd0ef0a53e6c0c9e7e
   FirebaseAnalytics: 0270389efbe3022b54ec4588862dabec3477ee98
   FirebaseAppCheckInterop: f95a4feb9089867aff1a4bdc2ce309137e07736a
   FirebaseAuth: a66c1e14ec58f41d154a4b41ce1a23ea00ad4805
@@ -852,6 +865,6 @@ SPEC CHECKSUMS:
   SwiftImageReadWrite: 3508ec60fea50876964055b63558fdd02f132ba3
   SwiftQRCodeGenerator: c5cdef1603699784b07af0fd3cc1c2f45ac26ada
 
-PODFILE CHECKSUM: 2e997f5cbc375c40383977a72bd7c011b0003189
+PODFILE CHECKSUM: 00ccee502a691b3c6f48016a5cd60df886ee1363
 
 COCOAPODS: 1.12.1

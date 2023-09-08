@@ -10,6 +10,7 @@ target 'BlazeCoffee' do
 	pod 'DSF_QRCode', '~> 16.0.1'
 	pod 'FirebaseAuth'
 	pod 'FirebaseAnalytics'
+	pod 'FBSDKCoreKit'
 	pod 'FirebaseFirestore'
 
 end
