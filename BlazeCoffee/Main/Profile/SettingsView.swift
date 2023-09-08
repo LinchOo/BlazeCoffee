@@ -55,7 +55,10 @@ struct SettingsView: View {
                         Spacer()
                         if viewModel.auth.currentUser != nil {
                             Text(viewModel.auth.currentUser!.email!)
+                                .font(.custom("MarckScript-Regular", size: 20))
                                 .accentColor(.white.opacity(0.5))
+                                .minimumScaleFactor(0.8)
+                                .lineLimit(1)
                         } else {
                             Text("Empty")
                                 .accentColor(.white.opacity(0.5))
@@ -99,10 +102,9 @@ struct SettingsView: View {
                             .foregroundColor(.red)
                     }
                 }
-                
                 Spacer()
             }
-            .frame(width: 200,height: 350)
+            .frame(width: 250,height: 350)
             .padding(.horizontal)
             .background(Color("moloko"))
             .cornerRadius(15)
@@ -279,5 +281,6 @@ struct SettingsView: View {
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView(isSettings: .constant(true))
+            .environmentObject(userViewModel())
     }
 }
