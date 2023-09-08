@@ -11,4 +11,5 @@ target 'BlazeCoffee' do
 	pod 'FirebaseAuth'
 	pod 'FirebaseAnalytics'
 	pod 'FirebaseFirestore'
+
 end

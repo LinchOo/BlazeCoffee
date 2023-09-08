@@ -34,12 +34,12 @@
 		424F47FE2AA7818A003D9BA5 /* Sunnyspells-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 424F47FC2AA7818A003D9BA5 /* Sunnyspells-Regular.otf */; };
 		424F47FF2AA7818A003D9BA5 /* MarckScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 424F47FD2AA7818A003D9BA5 /* MarckScript-Regular.ttf */; };
 		424F48012AA785AB003D9BA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 424F48002AA785AB003D9BA5 /* GoogleService-Info.plist */; };
-		E57752B83B8E5B570ED3E35A /* Pods_BlazeCoffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302BB6BAB117E00764729939 /* Pods_BlazeCoffee.framework */; };
+		67693A266684AB282EE4B998 /* Pods_BlazeCoffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070E6FC44868D7EC54BF7D91 /* Pods_BlazeCoffee.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04BA082EA07C4FC98A19E1BC /* Pods-BlazeCoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlazeCoffee.release.xcconfig"; path = "Target Support Files/Pods-BlazeCoffee/Pods-BlazeCoffee.release.xcconfig"; sourceTree = "<group>"; };
-		302BB6BAB117E00764729939 /* Pods_BlazeCoffee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlazeCoffee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		070E6FC44868D7EC54BF7D91 /* Pods_BlazeCoffee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlazeCoffee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DEBF42F4F36E498B008186 /* Pods-BlazeCoffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlazeCoffee.debug.xcconfig"; path = "Target Support Files/Pods-BlazeCoffee/Pods-BlazeCoffee.debug.xcconfig"; sourceTree = "<group>"; };
 		42158A422AA8C62D00120617 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		424F47922AA77ACA003D9BA5 /* BlazeCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlazeCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		424F47952AA77ACA003D9BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		424F47FC2AA7818A003D9BA5 /* Sunnyspells-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sunnyspells-Regular.otf"; sourceTree = "<group>"; };
 		424F47FD2AA7818A003D9BA5 /* MarckScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarckScript-Regular.ttf"; sourceTree = "<group>"; };
 		424F48002AA785AB003D9BA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CB8BC4B4578CD789E30734EF /* Pods-BlazeCoffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlazeCoffee.debug.xcconfig"; path = "Target Support Files/Pods-BlazeCoffee/Pods-BlazeCoffee.debug.xcconfig"; sourceTree = "<group>"; };
+		758C261B9A84693CACAD3BC6 /* Pods-BlazeCoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlazeCoffee.release.xcconfig"; path = "Target Support Files/Pods-BlazeCoffee/Pods-BlazeCoffee.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,29 +78,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E57752B83B8E5B570ED3E35A /* Pods_BlazeCoffee.framework in Frameworks */,
+				67693A266684AB282EE4B998 /* Pods_BlazeCoffee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14BC3BA87016E429CFF4C66A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CB8BC4B4578CD789E30734EF /* Pods-BlazeCoffee.debug.xcconfig */,
-				04BA082EA07C4FC98A19E1BC /* Pods-BlazeCoffee.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		424F47892AA77ACA003D9BA5 = {
 			isa = PBXGroup;
 			children = (
 				424F47942AA77ACA003D9BA5 /* BlazeCoffee */,
 				424F47932AA77ACA003D9BA5 /* Products */,
-				14BC3BA87016E429CFF4C66A /* Pods */,
-				50C81AA119E416225E3249E1 /* Frameworks */,
+				768F5B9B887E5CD52F75CEEC /* Pods */,
+				FF3777BD0AA93B70328EE3A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,10 +195,20 @@
 			path = MapCafe;
 			sourceTree = "<group>";
 		};
-		50C81AA119E416225E3249E1 /* Frameworks */ = {
+		768F5B9B887E5CD52F75CEEC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				302BB6BAB117E00764729939 /* Pods_BlazeCoffee.framework */,
+				19DEBF42F4F36E498B008186 /* Pods-BlazeCoffee.debug.xcconfig */,
+				758C261B9A84693CACAD3BC6 /* Pods-BlazeCoffee.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF3777BD0AA93B70328EE3A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				070E6FC44868D7EC54BF7D91 /* Pods_BlazeCoffee.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -219,11 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 424F47A62AA77ACC003D9BA5 /* Build configuration list for PBXNativeTarget "BlazeCoffee" */;
 			buildPhases = (
-				C3683732F4262F27D6057AB0 /* [CP] Check Pods Manifest.lock */,
+				27750C9EE13C4C9CD24F2219 /* [CP] Check Pods Manifest.lock */,
 				424F478E2AA77ACA003D9BA5 /* Sources */,
 				424F478F2AA77ACA003D9BA5 /* Frameworks */,
 				424F47902AA77ACA003D9BA5 /* Resources */,
-				BBDD27FC2CF49772FFE8BF36 /* [CP] Embed Pods Frameworks */,
+				E1B03111981FCAD6F1C79463 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,24 +285,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BBDD27FC2CF49772FFE8BF36 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BlazeCoffee/Pods-BlazeCoffee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BlazeCoffee/Pods-BlazeCoffee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlazeCoffee/Pods-BlazeCoffee-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C3683732F4262F27D6057AB0 /* [CP] Check Pods Manifest.lock */ = {
+		27750C9EE13C4C9CD24F2219 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,6 +305,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1B03111981FCAD6F1C79463 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlazeCoffee/Pods-BlazeCoffee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlazeCoffee/Pods-BlazeCoffee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlazeCoffee/Pods-BlazeCoffee-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -484,7 +485,7 @@
 		};
 		424F47A72AA77ACC003D9BA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB8BC4B4578CD789E30734EF /* Pods-BlazeCoffee.debug.xcconfig */;
+			baseConfigurationReference = 19DEBF42F4F36E498B008186 /* Pods-BlazeCoffee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -525,7 +526,7 @@
 		};
 		424F47A82AA77ACC003D9BA5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04BA082EA07C4FC98A19E1BC /* Pods-BlazeCoffee.release.xcconfig */;
+			baseConfigurationReference = 758C261B9A84693CACAD3BC6 /* Pods-BlazeCoffee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
