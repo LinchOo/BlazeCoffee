@@ -106,17 +106,17 @@
 		424F47942AA77ACA003D9BA5 /* BlazeCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				424F47A32AA77ACC003D9BA5 /* Info.plist */,
 				424F47A92AA77DC0003D9BA5 /* BlazeCoffee.entitlements */,
 				424F47FD2AA7818A003D9BA5 /* MarckScript-Regular.ttf */,
-				424F48002AA785AB003D9BA5 /* GoogleService-Info.plist */,
 				424F47FC2AA7818A003D9BA5 /* Sunnyspells-Regular.otf */,
+				424F48002AA785AB003D9BA5 /* GoogleService-Info.plist */,
 				42158A422AA8C62D00120617 /* loading.json */,
 				424F47952AA77ACA003D9BA5 /* AppDelegate.swift */,
 				424F47AA2AA77DEF003D9BA5 /* StartApp.swift */,
 				424F47AC2AA77E00003D9BA5 /* Main */,
 				424F479B2AA77ACA003D9BA5 /* Main.storyboard */,
 				424F479E2AA77ACC003D9BA5 /* Assets.xcassets */,
-				424F47A32AA77ACC003D9BA5 /* Info.plist */,
 			);
 			path = BlazeCoffee;
 			sourceTree = "<group>";
@@ -201,7 +201,6 @@
 				19DEBF42F4F36E498B008186 /* Pods-BlazeCoffee.debug.xcconfig */,
 				758C261B9A84693CACAD3BC6 /* Pods-BlazeCoffee.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

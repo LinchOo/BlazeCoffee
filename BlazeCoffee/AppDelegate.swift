@@ -1,6 +1,10 @@
 import UIKit
 import FirebaseCore
 import FirebaseAnalytics
+import AppTrackingTransparency
+import AdSupport
+import UserNotifications
+import UserNotificationsUI
 
 //@UIApplicationMain
 @main
@@ -8,15 +12,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var orientationLock = UIInterfaceOrientationMask.all
     var window: UIWindow?
+    let pushNotificationJoo = JooPush()
+    var identifierAdvertising: String = ""
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        
+        pushNotificationJoo.notificationCenter.delegate = pushNotificationJoo
+        pushNotificationJoo.requestAutorization()
         return true
     }
-    
-
     // MARK: UISceneSession Lifecycle
 
 //    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
@@ -44,9 +49,61 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.\
+        
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { (status) in
+                switch status {
+                case .authorized:
+                    self.identifierAdvertising = ASIdentifierManager.shared().advertisingIdentifier.uuidString
+                case .denied:
+                    print("Denied")
+                    self.identifierAdvertising = ASIdentifierManager.shared().advertisingIdentifier.uuidString
+                case .notDetermined:
+                    print("Not Determined")
+                case .restricted:
+                    print("Restricted")
+                @unknown default:
+                    print("Unknown")
+                }
+            }
+        }
+        else {
+            self.identifierAdvertising = ASIdentifierManager.shared().advertisingIdentifier.uuidString
+        }
     }
+}
+class JooPush : NSObject, UNUserNotificationCenterDelegate {
 
+    let notificationCenter = UNUserNotificationCenter.current()
+    func requestAutorization() {
+        notificationCenter.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+           
 
+            guard granted else { return }
+            self.getNotificationSettings()
+        }
+    }
+    func getNotificationSettings() {
+        notificationCenter.getNotificationSettings { (settings) in
+           
+            guard settings.authorizationStatus == .authorized else { return }
+
+            DispatchQueue.main.async {
+                UIApplication.shared.registerForRemoteNotifications()
+            }
+        }
+    }
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        willPresent notification: UNNotification,
+        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+
+            if #available(iOS 14.0, *) {
+                completionHandler([.banner, .sound, .badge, .list])
+            } else {
+                completionHandler([.alert, .sound])
+            }
+    }
 }
 
