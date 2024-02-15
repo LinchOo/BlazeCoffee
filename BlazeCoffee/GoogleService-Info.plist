@@ -2,33 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CLIENT_ID</key>
-	<string>1087051352110-8q61f0alr7h5uie6poi9c5ar8jeu8mt1.apps.googleusercontent.com</string>
-	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1087051352110-8q61f0alr7h5uie6poi9c5ar8jeu8mt1</string>
-	<key>API_KEY</key>
-	<string>AIzaSyDrWWe90ZkQ4uMXVvEJTS1W9RoAfHM7IIQ</string>
-	<key>GCM_SENDER_ID</key>
-	<string>1087051352110</string>
-	<key>PLIST_VERSION</key>
-	<string>1</string>
-	<key>BUNDLE_ID</key>
-	<string>com.BlazeCoffee</string>
-	<key>PROJECT_ID</key>
-	<string>blaze-coffee</string>
-	<key>STORAGE_BUCKET</key>
-	<string>blaze-coffee.appspot.com</string>
-	<key>IS_ADS_ENABLED</key>
-	<false></false>
-	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
-	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
-	<key>IS_GCM_ENABLED</key>
-	<true></true>
-	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
-	<key>GOOGLE_APP_ID</key>
-	<string>1:1087051352110:ios:974650711dc787b89df7bf</string>
+	
 </dict>
 </plist>
